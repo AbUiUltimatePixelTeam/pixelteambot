@@ -18,6 +18,9 @@ bot.on("message", function(message) {
                 .setColor(0x00FFF)
             message.channel.send(embed);
             break
+        case "profile":
+            message.reply(message.author.avatarURL);
+            break
         default:
             message.channel.sendMessage("**Commande invalide.**")
     }
