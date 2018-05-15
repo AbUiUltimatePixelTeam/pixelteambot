@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const PREFIX = "p!";
 
-bot.login('NDQ1OTMwNjg3NDA1NzUyMzUx.Ddxo2w.tleq8KHyQBk4_ezYQoxNhbdey9E');
+bot.login(process.env.TOKEN);
 
 bot.on("message", function(message) {
     if (message.author.equals(bot.user)) return;
