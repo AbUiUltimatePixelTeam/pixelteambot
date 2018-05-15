@@ -18,7 +18,7 @@ bot.on("message", function(message) {
                 .setColor(0x00FFF)
             message.channel.send(embed);
             break
-        case "profile":
+        case "myavatar":
             message.reply(message.author.avatarURL);
             break
         default:
